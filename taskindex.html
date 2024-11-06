@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="taskstyle.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Finance Tracker</h1>
+
+        <div class="form-section">
+       <h2>Add Transaction Here</h2>
+            <form id="transactionForm">
+           <input type="number" id="amount" placeholder="Amount" required>
+                <input type="text" id="description" placeholder="Description" required>
+              <input type="date" id="date" required>
+                <select id="category">
+               <option value="Income">Income</option>
+           <option value="Expense">Expense</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+ <div id="summary">
+            <p>Total Income: <span id="totalIncome">Rs0</span></p>
+    <p>Total Expenses: <span id="totalExpenses">Rs0</span></p>
+            <p>Net Balance: <span id="netBalance">Rs0</span></p>
+        </div>
+   <div id="transactions">
+            <h2>Transactions History</h2>
+            <ul id="transactionList"></ul>
+        </div>
+    </div>
+
+    <script src="taskapp.js"></script>
+</body>
+
+</html>
